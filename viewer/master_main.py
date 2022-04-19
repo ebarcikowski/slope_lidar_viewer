@@ -1,4 +1,4 @@
-from master_window import Window
+from viewer.master_window import Window
 import vispy.app
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys

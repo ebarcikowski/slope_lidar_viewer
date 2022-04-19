@@ -1,8 +1,8 @@
-import depth_window as SDW
-import alignment_window as AW
-import cropping_window as CW
+import viewer.depth_window as SDW
+import viewer.alignment_window as AW
+import viewer.cropping_window as CW
 from PyQt5 import QtWidgets, QtCore, QtGui
-from file_manager import File_Manager
+from viewer.file_manager import File_Manager
 import vispy.app
 import sys
 

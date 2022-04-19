@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import *
 import vispy.app
 import sys
-from cropping_manager import Manager, crop_file_object
+from viewer.cropping_manager import Manager, crop_file_object
 import numpy as np
 
 class Window(QtWidgets.QMainWindow):

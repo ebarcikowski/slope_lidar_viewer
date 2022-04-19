@@ -3,9 +3,9 @@ from PyQt5.QtWidgets import *
 import vispy.app
 import sys
 from grid import Grid
-from alignment_manager import Manager, align_file_object
+from viewer.alignment_manager import Manager, align_file_object
 import numpy as np
-import ICP_algorithm as ia
+import viewer.ICP_algorithm as ia
 
 class Window(QtWidgets.QMainWindow):
     def __init__(self, file_manager):

@@ -1,4 +1,5 @@
 from laspy.file import File
+import laspy
 import numpy as np
 from remove_duplicates import remove_duplicates
 import copy
@@ -9,10 +10,10 @@ class Las_Data:
 
         ### Remove Duplicates If Needed
         cleaned_file = remove_duplicates(str(file_path))
-        self.file = File(cleaned_file, mode = "r")
-
+        # self.file = File(cleaned_file, mode = "r")
+        self.file = laspy.read(file_path)
         # pull all pertinent data from the las file
-        self.file =  File(file_path, mode = "r")
+        # self.file = File(file_path, mode = "r")
         self.file_path = file_path
         self.file_name = file_path.split('/')[-1]
         self.file_name = self.file_name.split('.')[0]

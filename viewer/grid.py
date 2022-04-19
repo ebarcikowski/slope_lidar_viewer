@@ -1,4 +1,4 @@
-from point import Point_Class
+from viewer.point import Point_Class
 from laspy.file import File
 import numpy as np
 from scipy import spatial, signal
@@ -7,10 +7,9 @@ import time
 import sys
 import math
 import copy
-from remove_duplicates import remove_duplicates
-from grid_cell import Grid_Cell
+from viewer.grid_cell import Grid_Cell
 import matplotlib.pyplot as plt
-from scene import Scene
+from viewer.scene import Scene
 
 import vispy.scene
 from vispy.scene import visuals

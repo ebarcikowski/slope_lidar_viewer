@@ -2,8 +2,8 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import *
 import vispy.app
 import sys
-from grid import Grid
-from depth_manager import Manager
+from viewer.grid import Grid
+from viewer.depth_manager import Manager
 import numpy as np
 
 class Window(QtWidgets.QMainWindow):

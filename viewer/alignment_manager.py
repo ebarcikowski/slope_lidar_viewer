@@ -13,7 +13,7 @@ import tie_point_check as tpc
 import vispy.scene
 from vispy.scene import visuals
 from laspy.file import File
-from grid import Grid
+from viewer.grid import Grid
 
 class align_file_object(QWidget):
     ### This object is what will be displayed in the window on the left hand side when each file is loaded in
